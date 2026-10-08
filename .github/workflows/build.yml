@@ -1,0 +1,26 @@
+name: build
+on:
+  push:
+  pull_request:
+  workflow_dispatch:   # lets you press "Run workflow" manually
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: setup jdk
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - name: make gradle wrapper executable
+        run: chmod +x ./gradlew
+      - name: build
+        run: ./gradlew build
+      - name: upload the mod jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: ironmod-jar
+          path: build/libs/*.jar
