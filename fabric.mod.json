@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "ironmod",
+	"version": "${version}",
+	"name": "Iron Man Mod",
+	"description": "Data-driven Iron Man suits with flight, repulsors, unibeam and an arc reactor energy system. Inspired by the suit-set design of Fisk's Superheroes.",
+	"authors": ["You"],
+	"license": "CC0-1.0",
+	"icon": "assets/ironmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.ironmod.IronMod"],
+		"client": ["com.ironmod.client.IronModClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

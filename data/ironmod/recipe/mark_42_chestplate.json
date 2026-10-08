@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "I I",
+    "IAI",
+    "IGI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:emerald"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "A": {
+      "item": "ironmod:arc_reactor"
+    }
+  },
+  "result": {
+    "id": "ironmod:mark_42_chestplate",
+    "count": 1
+  }
+}

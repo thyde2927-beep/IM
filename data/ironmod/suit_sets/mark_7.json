@@ -1,0 +1,44 @@
+{
+  "max_energy": 1200,
+  "energy_regen_per_tick": 0.6,
+  "fall_damage_immunity": true,
+  "passive_effects": [
+    {
+      "effect": "minecraft:strength",
+      "amplifier": 0
+    },
+    {
+      "effect": "minecraft:resistance",
+      "amplifier": 0
+    }
+  ],
+  "abilities": [
+    {
+      "type": "flight",
+      "speed": 0.8,
+      "energy_per_tick": 0.7
+    },
+    {
+      "type": "repulsor",
+      "damage": 8,
+      "range": 40,
+      "cooldown": 6,
+      "energy_cost": 15
+    },
+    {
+      "type": "unibeam",
+      "damage": 22,
+      "range": 48,
+      "cooldown": 160,
+      "energy_cost": 300,
+      "explosion_power": 2.0,
+      "ignite_seconds": 4
+    },
+    {
+      "type": "boost",
+      "speed": 2.0,
+      "cooldown": 50,
+      "energy_cost": 60
+    }
+  ]
+}

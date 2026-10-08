@@ -1,0 +1,31 @@
+{
+  "max_energy": 800,
+  "energy_regen_per_tick": 0.4,
+  "fall_damage_immunity": true,
+  "passive_effects": [
+    {
+      "effect": "minecraft:strength",
+      "amplifier": 0
+    }
+  ],
+  "abilities": [
+    {
+      "type": "flight",
+      "speed": 0.6,
+      "energy_per_tick": 0.6
+    },
+    {
+      "type": "repulsor",
+      "damage": 6,
+      "range": 32,
+      "cooldown": 8,
+      "energy_cost": 15
+    },
+    {
+      "type": "boost",
+      "speed": 1.6,
+      "cooldown": 60,
+      "energy_cost": 60
+    }
+  ]
+}

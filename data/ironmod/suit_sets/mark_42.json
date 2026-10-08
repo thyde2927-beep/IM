@@ -1,0 +1,44 @@
+{
+  "max_energy": 1500,
+  "energy_regen_per_tick": 0.8,
+  "fall_damage_immunity": true,
+  "passive_effects": [
+    {
+      "effect": "minecraft:strength",
+      "amplifier": 0
+    },
+    {
+      "effect": "minecraft:resistance",
+      "amplifier": 0
+    }
+  ],
+  "abilities": [
+    {
+      "type": "flight",
+      "speed": 0.9,
+      "energy_per_tick": 0.7
+    },
+    {
+      "type": "repulsor",
+      "damage": 9,
+      "range": 40,
+      "cooldown": 5,
+      "energy_cost": 15
+    },
+    {
+      "type": "missiles",
+      "damage": 6,
+      "range": 48,
+      "cooldown": 100,
+      "energy_cost": 200,
+      "count": 6,
+      "explosion_power": 1.5
+    },
+    {
+      "type": "boost",
+      "speed": 2.2,
+      "cooldown": 45,
+      "energy_cost": 60
+    }
+  ]
+}
